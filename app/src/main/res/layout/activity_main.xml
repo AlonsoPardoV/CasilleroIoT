@@ -1,0 +1,145 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F6FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Casillero Inteligente IoT + Firebase"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#2C3E50"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- SECCIÓN DE AUTENTICACIÓN -->
+        <EditText
+            android:id="@+id/editTextCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo electrónico"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:layout_marginBottom="12dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/btnRegistrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registrarse"
+                android:layout_marginRight="8dp"
+                android:backgroundTint="#8E44AD"/>
+
+            <Button
+                android:id="@+id/btnIniciarSesion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Iniciar Sesión"
+                android:backgroundTint="#2980B9"/>
+        </LinearLayout>
+
+        <!-- NUEVO: Botón de Cerrar Sesión -->
+        <Button
+            android:id="@+id/btnCerrarSesion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cerrar Sesión"
+            android:backgroundTint="#7F8C8D"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/textViewEstado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estado de sesión: Sin autenticar"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:textColor="#7F8C8D"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- ESTADO DEL CASILLERO -->
+        <TextView
+            android:id="@+id/tvEstado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ESTADO: CERRADO (Seguro)"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#27AE60"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- BOTÓN DE CONTROL (Abre y Cierra) -->
+        <Button
+            android:id="@+id/btnAbrir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Abrir Casillero"
+            android:backgroundTint="#E74C3C"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- SECCIÓN DE DATOS EN LA NUBE -->
+        <Button
+            android:id="@+id/btnGuardarDato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sincronizar Estado en la Nube"
+            android:backgroundTint="#16A085"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/textViewDato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nube: Sin datos sincronizados"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:background="#EAECEE"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- LOG DE ACTIVIDAD -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registro de Actividad"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvLog"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#FFFFFF"
+            android:padding="8dp"
+            android:text="• Sistema iniciado correctamente\n"
+            android:textSize="12sp"
+            android:textColor="#333333"/>
+
+    </LinearLayout>
+</ScrollView>
